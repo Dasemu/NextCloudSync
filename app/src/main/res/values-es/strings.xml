@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NextCloudSync</string>
+
+    <!-- Login -->
+    <string name="login_title">Conectar con Nextcloud</string>
+    <string name="login_server_url_label">Dirección del servidor</string>
+    <string name="login_server_url_hint">https://nube.ejemplo.com</string>
+    <string name="login_connect_button">Conectar</string>
+    <string name="login_waiting">Esperando confirmación en el navegador…</string>
+    <string name="login_error_invalid_url">Introduce una dirección de servidor válida.</string>
+    <string name="login_error_not_nextcloud">Esto no parece un servidor Nextcloud.</string>
+    <string name="login_error_timeout">La solicitud de acceso ha caducado. Inténtalo de nuevo.</string>
+    <string name="login_error_network">No se pudo contactar con el servidor. Comprueba tu conexión.</string>
+    <string name="login_signed_in_as">Conectado como %1$s</string>
+
+    <!-- Folder list -->
+    <string name="folders_title">Carpetas sincronizadas</string>
+    <string name="folders_empty">Todavía no hay carpetas. Pulsa + para añadir una.</string>
+    <string name="folders_add">Añadir carpeta</string>
+    <string name="folders_status_ok">Actualizada</string>
+    <string name="folders_status_syncing">Sincronizando…</string>
+    <string name="folders_status_error">Error</string>
+    <string name="folders_status_paused">Pausada</string>
+    <string name="folders_status_conflict">%1$d conflicto(s)</string>
+    <string name="folders_last_sync">Última sincronización: %1$s</string>
+    <string name="folders_never_synced">Nunca sincronizada</string>
+    <string name="folders_sync_now">Sincronizar ahora</string>
+
+    <!-- Folder editor -->
+    <string name="folder_editor_title_new">Nueva carpeta sincronizada</string>
+    <string name="folder_editor_title_edit">Editar carpeta sincronizada</string>
+    <string name="folder_editor_local_path">Carpeta local</string>
+    <string name="folder_editor_remote_path">Carpeta remota</string>
+    <string name="folder_editor_choose">Elegir…</string>
+    <string name="folder_editor_display_name">Nombre para mostrar</string>
+    <string name="folder_editor_sync_mode">Dirección de sincronización</string>
+    <string name="folder_editor_mode_bidirectional">Sincronización bidireccional</string>
+    <string name="folder_editor_mode_upload_only">Solo subir (dispositivo → Nextcloud)</string>
+    <string name="folder_editor_mode_download_only">Solo descargar (Nextcloud → dispositivo)</string>
+    <string name="folder_editor_mode_mirror_up">Reflejar en Nextcloud (incluye borrados)</string>
+    <string name="folder_editor_mode_mirror_down">Reflejar en el dispositivo (incluye borrados)</string>
+    <string name="folder_editor_conflict_policy">Ante un conflicto</string>
+    <string name="folder_editor_conflict_keep_both">Conservar ambas copias</string>
+    <string name="folder_editor_conflict_prefer_local">Preferir este dispositivo</string>
+    <string name="folder_editor_conflict_prefer_remote">Preferir Nextcloud</string>
+    <string name="folder_editor_conflict_ask">Preguntar cada vez</string>
+    <string name="folder_editor_section_triggers">Disparadores de sincronización</string>
+    <string name="folder_editor_section_filters">Filtros</string>
+    <string name="folder_editor_use_global_settings">Usar valores globales</string>
+    <string name="folder_editor_override_settings">Personalizar para esta carpeta</string>
+    <string name="folder_editor_save">Guardar</string>
+    <string name="folder_editor_delete">Eliminar par de sincronización</string>
+    <string name="folder_editor_delete_confirm">¿Eliminar esta carpeta sincronizada? Los archivos locales y remotos se conservan, solo se borra el emparejamiento.</string>
+    <string name="remote_picker_title">Elegir una carpeta de Nextcloud</string>
+    <string name="remote_picker_up">Subir</string>
+    <string name="remote_picker_select_here">Seleccionar esta carpeta</string>
+    <string name="remote_picker_empty">Esta carpeta no tiene subcarpetas</string>
+    <string name="remote_picker_not_configured">Inicia sesión en tu cuenta de Nextcloud para poder explorar las carpetas remotas</string>
+    <string name="remote_picker_error">No se pudieron cargar las carpetas: %1$s</string>
+    <string name="remote_picker_retry">Reintentar</string>
+
+    <!-- Triggers / constraints -->
+    <string name="triggers_network_title">Red</string>
+    <string name="triggers_network_any">Cualquier red</string>
+    <string name="triggers_network_unmetered">Solo redes no medidas</string>
+    <string name="triggers_network_wifi_only">Solo Wi-Fi</string>
+    <string name="triggers_network_allow_roaming">Permitir en itinerancia</string>
+    <string name="triggers_network_ssid_filter">Restringir a redes Wi-Fi concretas</string>
+    <string name="triggers_battery_title">Batería</string>
+    <string name="triggers_battery_min_level">Nivel mínimo de batería</string>
+    <string name="triggers_battery_charging_only">Solo mientras carga</string>
+    <string name="triggers_battery_respect_saver">Respetar el ahorro de batería</string>
+    <string name="triggers_schedule_title">Horario</string>
+    <string name="triggers_schedule_interval">Intervalo de sincronización</string>
+    <string name="triggers_schedule_quiet_hours">Horas de silencio</string>
+    <string name="triggers_events_title">Eventos</string>
+    <string name="triggers_events_on_file_change">Al cambiar un archivo</string>
+    <string name="triggers_events_on_charger_connect">Al conectar el cargador</string>
+    <string name="triggers_events_on_wifi_connect">Al conectar a una Wi-Fi concreta</string>
+    <string name="triggers_events_on_boot">Al arrancar el dispositivo</string>
+    <string name="triggers_events_manual_only">Solo manual</string>
+    <string name="triggers_filters_title">Filtros de archivos</string>
+    <string name="triggers_filters_max_size">Tamaño máximo de archivo</string>
+    <string name="triggers_filters_skip_hidden">Omitir archivos ocultos</string>
+    <string name="triggers_filters_exclude_patterns">Patrones de exclusión</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_section_account">Cuenta</string>
+    <string name="settings_sign_out">Cerrar sesión</string>
+    <string name="settings_section_defaults">Disparadores por defecto</string>
+    <string name="settings_section_battery">Batería y fiabilidad</string>
+    <string name="settings_section_about">Acerca de</string>
+    <string name="settings_language">Idioma</string>
+
+    <!-- Battery / health -->
+    <string name="health_title">Salud de la sincronización</string>
+    <string name="health_battery_optimization_title">La optimización de batería está restringiendo la app</string>
+    <string name="health_battery_optimization_body">Android puede pausar la sincronización en segundo plano para ahorrar energía. Exime a NextCloudSync para que sea fiable.</string>
+    <string name="health_battery_optimization_action">Solucionar ahora</string>
+    <string name="health_standby_bucket_title">El sistema ha reducido la prioridad de la app</string>
+    <string name="health_standby_bucket_body">Categoría de uso: %1$s. La sincronización puede ejecutarse con menos frecuencia hasta que abras la app más a menudo.</string>
+    <string name="health_manufacturer_title">Los dispositivos %1$s necesitan un paso extra</string>
+    <string name="health_manufacturer_body">El fabricante de tu dispositivo restringe las apps en segundo plano más allá de Android estándar. Permite el autoarranque para NextCloudSync.</string>
+    <string name="health_manufacturer_action">Abrir ajustes</string>
+    <string name="health_all_good">Todo en orden. La sincronización debería funcionar de forma fiable en segundo plano.</string>
+    <string name="health_last_successful_sync">Última sincronización correcta: %1$s</string>
+    <string name="health_missed_runs">Ejecuciones perdidas en los últimos 7 días: %1$d</string>
+    <string name="health_learn_more">Más información</string>
+
+    <!-- Conflicts -->
+    <string name="conflicts_title">Conflictos</string>
+    <string name="conflicts_empty">No hay conflictos por ahora.</string>
+    <string name="conflicts_keep_local">Conservar versión del dispositivo</string>
+    <string name="conflicts_keep_remote">Conservar versión de Nextcloud</string>
+    <string name="conflicts_keep_both">Conservar ambas</string>
+
+    <!-- Activity log -->
+    <string name="log_title">Actividad</string>
+    <string name="log_empty">Todavía no hay actividad.</string>
+    <string name="log_uploaded">Subido %1$s</string>
+    <string name="log_downloaded">Descargado %1$s</string>
+    <string name="log_deleted_local">Borrado localmente: %1$s</string>
+    <string name="log_deleted_remote">Borrado en Nextcloud: %1$s</string>
+    <string name="log_conflict">Conflicto: %1$s</string>
+    <string name="log_error">Error: %1$s</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_sync_name">Actividad de sincronización</string>
+    <string name="notification_channel_sync_description">Muestra el progreso al sincronizar carpetas</string>
+    <string name="notification_channel_alerts_name">Avisos de sincronización</string>
+    <string name="notification_channel_alerts_description">Conflictos y errores que requieren tu atención</string>
+    <string name="notification_syncing_title">Sincronizando %1$s</string>
+    <string name="notification_syncing_progress">%1$d de %2$d archivos</string>
+
+    <!-- Common -->
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_ok">Aceptar</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_grant_permission">Conceder permiso</string>
+    <string name="permission_storage_rationale">NextCloudSync necesita acceso completo a archivos para sincronizar tus carpetas directamente, sin selectores de archivos lentos.</string>
+
+    <!-- Carpetas virtuales (modo root) -->
+    <string name="virtual_title">Carpetas virtuales</string>
+    <string name="virtual_add">A\u00f1adir carpeta virtual</string>
+    <string name="virtual_empty">Todav\u00eda no hay carpetas virtuales. Pulsa + para a\u00f1adir una.</string>
+    <string name="virtual_subtitle">Explora una carpeta remota sin descargarla. Los archivos se descargan solo al abrirlos.</string>
+    <string name="virtual_no_root_title">Root no disponible</string>
+    <string name="virtual_no_root_body">Las carpetas virtuales necesitan root. Conc\u00e9deselo a NextCloudSync en tu gestor de root (en KernelSU: Superusuario) y vuelve a comprobarlo.</string>
+    <string name="virtual_recheck_root">Volver a comprobar</string>
+    <string name="virtual_status_mounted">Montada en %1$s</string>
+    <string name="virtual_status_unmounted">Sin montar</string>
+    <string name="virtual_status_mounting">Montando\u2026</string>
+    <string name="virtual_status_failed">Fall\u00f3: %1$s</string>
+    <string name="virtual_mount">Montar</string>
+    <string name="virtual_unmount">Desmontar</string>
+    <string name="virtual_editor_new">Nueva carpeta virtual</string>
+    <string name="virtual_editor_edit">Editar carpeta virtual</string>
+    <string name="virtual_name_label">Nombre</string>
+    <string name="virtual_remote_path_label">Ruta remota</string>
+    <string name="virtual_remote_path_hint">/ para todo tu Nextcloud</string>
+    <string name="virtual_cache_label">L\u00edmite de cach\u00e9: %1$d MB</string>
+    <string name="virtual_save">Guardar</string>
+    <string name="virtual_delete">Eliminar</string>
+    <string name="virtual_remount_after_reboot">Los montajes no sobreviven a un reinicio; vuelve a montar tras reiniciar.</string>
+</resources>
